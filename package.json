@@ -2,11 +2,12 @@
   "name": "@tombatossals/chords-db",
   "version": "0.5.1",
   "description": "Instrument Chords Database",
-  "main": "index.js",
+  "main": "dist/db.js",
+  "types" : "dist/db.d.ts",
   "scripts": {
     "test": "jest src",
     "stdout": "babel-node src/generate",
-    "build": "babel-node src/generate json",
+    "build": "tsc",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
     "prettier": "prettier --single-quote --write \"src/**/*.{js,jsx}\""
@@ -24,6 +25,12 @@
     "name": "David Rubert",
     "email": "david.rubert@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "Quentin Topper",
+      "email": "quentopp@gmail.com"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tombatossals/chords-db/issues"
